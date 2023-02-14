@@ -8,7 +8,8 @@ export default defineConfig({
     plugins: [
         vue(),
         vueJsx({
-            // options are passed on to @vue/babel-plugin-jsx
+            transformOn: true, // transform on: { click: xx } to onClick: xxx
+            mergeProps: true // merge static and dynamic class / style attributes / onXXX handlers
         }),
     ]
 })
