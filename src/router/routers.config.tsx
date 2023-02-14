@@ -6,6 +6,7 @@ import {First} from "../components/Welcome/First";
 import {Second} from "../components/Welcome/Second";
 import {Third} from "../components/Welcome/Third";
 import {Fourth} from "../components/Welcome/Fourth";
+import {User} from "../view/user";
 
 export const routes:Array<RouteRecordRaw> = [
     { path: '/', component: Home },
@@ -19,5 +20,6 @@ export const routes:Array<RouteRecordRaw> = [
             {path:'3', component:Third},
             {path:'4', component:Fourth},
         ]
-    }
+    },
+    { path: '/user', component: User },
 ]
