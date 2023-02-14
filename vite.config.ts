@@ -4,7 +4,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/zhiwei-wallet-frontend/dist/',
+    base: '/',
     plugins: [
         vue(),
         vueJsx({
