@@ -1,9 +1,10 @@
-import {defineComponent, FunctionalComponent, h, Transition, VNode} from 'vue';
+import {FunctionalComponent, Transition, VNode} from 'vue';
 import {RouteLocationNormalizedLoaded, RouterView} from 'vue-router';
 import s from './welcome.module.scss'
 import logo from '../assets/icons/mangosteen.svg'
 
 export const Welcome: FunctionalComponent = () => {
+    type TypeSlot = { Component: VNode, route: RouteLocationNormalizedLoaded }
     return (
         <div class={s.wrapper}>
             <header>
@@ -12,7 +13,7 @@ export const Welcome: FunctionalComponent = () => {
             </header>
             <main class={s.main}>
                 <RouterView name="main">
-                    {({Component: X, route: R}: { Component: VNode, route: RouteLocationNormalizedLoaded }) =>
+                    {({Component: X, route: R}: TypeSlot) =>
                         <Transition enterFromClass={s.slide_fade_enter_from}
                                     enterActiveClass={s.slide_fade_enter_active}
                                     leaveToClass={s.slide_fade_leave_to} leaveActiveClass={s.slide_fade_leave_active}>
