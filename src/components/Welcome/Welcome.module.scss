@@ -5,10 +5,10 @@
   background: var(--welcome-card-bg);
   border-radius: 8px;
   padding: 16px;
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+
   > h2 {
     margin-top: 40px;
   }
@@ -26,9 +26,9 @@
   align-items: center;
   font-size: 24px;
   height: var(--welcome-nav-height);
-  padding: 0 16px;
+  padding: 0 16px var(--welcome-nav-gap) 16px;
   color: var(--welcome-text);
-  padding-bottom: var(--welcome-nav-gap);
+
   > .fake {
     visibility: hidden;
   }
