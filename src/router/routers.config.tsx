@@ -5,6 +5,7 @@ import {Second} from "../components/Welcome/Second";
 import {Third} from "../components/Welcome/Third";
 import {Fourth} from "../components/Welcome/Fourth";
 import {User} from "../view/user";
+import {Start} from "../view/start";
 
 export const routes:Array<RouteRecordRaw> = [
     { path: '/', redirect: '/welcome/1' },
@@ -20,4 +21,5 @@ export const routes:Array<RouteRecordRaw> = [
         ]
     },
     { path: '/user', component: User },
+    { path: '/start', component: Start },
 ]
