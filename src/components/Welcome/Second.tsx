@@ -17,3 +17,4 @@ export const Second: FunctionalComponent = () => {
         }
     }</WelcomeLayout>
 }
+Second.displayName = 'Second'

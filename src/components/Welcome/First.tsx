@@ -18,3 +18,4 @@ export const First: FunctionalComponent = () => {
     }
     </WelcomeLayout>
 }
+First.displayName = 'First'

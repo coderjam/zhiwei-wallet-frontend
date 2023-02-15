@@ -17,3 +17,5 @@ export const Third: FunctionalComponent = () => {
         }
     }</WelcomeLayout>
 }
+
+Third.displayName= 'Third'
